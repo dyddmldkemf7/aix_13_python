@@ -1,0 +1,32 @@
+print("{}{}".format(52,273))
+print("{}{}".format(52,type(273)))
+
+print("{}".format(52,type(273)))
+
+
+string = "hello"
+string.upper()
+print("A지점:", string) # A지점:hello
+
+print("B지점:",string.upper()) # B지점:HELLO
+
+a=intput(">1번째 숫자:")
+b=intput(">2번째 숫자:")
+print("{}+{}={}".format(a,b,a+b))
+
+# 구의 반지름 R
+R =input("구의 반지름을 입력해주세요")
+pi = 3.141592
+부피 =4/3*pi*R**3
+겉넓이 = 4*pi*R**2
+print(f"구의 부피는 {부피}입니다.")
+print(f"구의 겉넓이는 {겉넓이}입니다.")
+
+
+a=float(input("및변의 길이를 입력해주세요"))
+b=float(input("높이의 길이를 입력해주세요"))
+c=(a**2+b**2)**0.5
+print(f"빗변의 길이는 {(c)}입니다.")
+
+
+

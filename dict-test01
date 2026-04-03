@@ -1,0 +1,60 @@
+m1 = {"name":"어벤저스 엔드","type":"히어로 무비"}
+# print(m1)
+#학생정보
+st1={"name":"홍길동","hakbun":1120}
+print(st1['name']) # 홍길동
+print(st1['hakbun']) #1120
+scoreDict = {
+    "홍길동":{"guk":80,"math":70,"eng":90}, # [80,70,90],
+    "김길동":{"guk":70,"math":70,"eng":90}
+    }
+print("홍길동의 수학점수",scoreDict['홍길동']["guk"]) #[80]
+# print("홍길동의 수학점수",scoreDict['홍길동']["gu"]) #[80]
+
+# Object 할당받은 메모리 공간
+
+n="홍길동"
+# 키는 immutable Object만 가능. 불변객체
+dic1 = {
+    n:90
+}
+print(dic1)
+dic2 = {
+    "abc":90
+}
+dict3 = dict() # 빈 사전
+print(dict3)
+dict3["a"] =70
+dict3["b"] =80
+print(dict3)
+dict3["a"] =100
+print(dict3)
+del dict3["a"]
+print('삭제후',dict3)
+# del dict3["a"]
+
+###### 학생점수관리 
+scores = dict()
+scores["홍길동"] = {
+    'guk':70, 'math':80, 'eng':90
+                 }
+# scores["박길동"] = {
+#     'guk':80, 'math':90, 'eng':70
+#                  }
+# name=input('학생이름>> ')
+# if name in scores:
+#     print(f'{name}의 점수 {scores[name]}')
+# else:
+#     print(f'{name}은 미등록학생')
+
+# value = scores.get(name)
+# if value == None:
+#     print(f'{name}은 미등록학생')
+# else:
+#     print(f'{name}의 점수 {scores[name]}')
+####
+scores2 = {
+    "홍":70,"김":80,"강":75,"권":90
+}
+for k in scores2:
+    print(f'{k}{scores2}[k]')

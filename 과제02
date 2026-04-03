@@ -1,0 +1,34 @@
+# 188P 1번~2번
+str_input = input ("인사해라: ")
+if str_input in ["안녕","안녕하세요"]:
+    print("안녕하세요")
+else:
+    print(str_input)
+
+# 188P 3번~4번
+import datetime
+now = datetime.datetime.now()
+str_input = input("지금 몇시야?: ")
+if str_input in ["지금 몇시야?","지금 몇시예요?"]:
+    print(f"지금은 {now.hour}시 입니다")
+else:
+    print(str_input)
+
+# 188P 나머지 
+str_input = input("안부를 물어봐주세요:")
+if str_input=="잘지내?":
+    print("잘지내?")
+else:
+    print(str_input)
+
+X=int(input("정수를 입력해주세요:"))
+
+for a in [2,3,4,5]:
+    if X % a ==0:
+        print(f"{X}는 {a}로 나누어 떨어집니다")
+    else: print(f"{X}는 {a}로 나누어 떨어지는 숫자가 아닙니다")
+
+numbers=[273,103,5,32,65,9,72,800,99]
+for number in numbers:
+    if number>=100:
+        print("-100이상의 수:", number)

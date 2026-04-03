@@ -1,0 +1,24 @@
+아래코드에 모든줄에 설명글 달아줘
+
+
+
+import random
+com = random.randint(1,100)
+min=1
+max=100
+
+for a in range(1, 7): 
+    user = int(input(f'{a}번째 시도>> :{min}~{max}사이 숫자 입력>>'))
+    
+    if com == user:
+        print("정답입니다!")
+        break
+    if com < user: 
+        print("낮춰주세요")
+        max=user-1
+    else:
+        print("높여주세요")
+        min=user+1
+    print("후보 숫자:",list(range(min,max+1)))
+else:
+    print(f"정답은 {com}! 당신은 바보입니까?")
